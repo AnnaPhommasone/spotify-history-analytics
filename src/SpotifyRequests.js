@@ -5,14 +5,14 @@ class SpotifyRequests {
         this.token = api_token;
     }
 
-    async getRecentlyPlayedTracks() {
+    async getRecentlyPlayedTracks(afterTimestamp) {
         const endpoint = "https://api.spotify.com/v1/me/player/recently-played";
         const config = {
             headers: {
                 Authorization: `Bearer ${this.token}`
             },
             params: {
-                limit: 5
+                after: afterTimestamp
             }
         };
         let res = await axios.get(endpoint, config);

@@ -1,21 +1,28 @@
 import React from 'react';
-import * as AiIcons from 'react-icons/ai';
-import * as FaIcons from 'react-icons/fa';
+import { AiFillHome } from 'react-icons/ai';
+import { BsFillFileBarGraphFill } from 'react-icons/bs';
+import { BsFillFileMusicFill } from 'react-icons/bs';
+import { AiFillLike } from 'react-icons/ai';
 
 export const NavbarData = [
     {
         title: 'Home',
         path: '/',
-        icon: <AiIcons.AiFillHome />,
+        icon: <AiFillHome />,
+    },
+    {
+        title: 'Features',
+        path: '/features',
+        icon: <BsFillFileBarGraphFill />,
     },
     {
         title: 'Genres',
         path: '/genres',
-        icon: <FaIcons.FaCartPlus />,
+        icon: <BsFillFileMusicFill />,
     },
     {
         title: 'Recommendations',
         path: '/recommendations',
-        icon: <FaIcons.FaCartPlus />,
+        icon: <AiFillLike />,
     },
-]
+];
