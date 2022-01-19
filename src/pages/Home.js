@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import FeaturesDropdown from '../components/FeaturesDropdown';
 
 export class Home extends Component {
 
@@ -7,7 +6,6 @@ export class Home extends Component {
         return (
             <div>
                 Home
-                <FeaturesDropdown />
             </div>
         );
     }

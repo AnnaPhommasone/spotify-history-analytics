@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NavbarData } from './NavbarData';
 import './Navbar.css';
+import logo from '../assets/spotify_logo.png';
 
 function Navbar() {
     const [itemClicked, setItemClicked] = useState(false);
@@ -10,7 +11,8 @@ function Navbar() {
     return (
         <div>
             <div className='top-menu-bar'>
-                <h2 className='title'>Spotify history analytics</h2>
+                <img src={logo} alt="Spotify Logo" />
+                <h2 className='title'>history analytics</h2>
             </div>
             <nav>
                 <ul className='nav-menu-items'>

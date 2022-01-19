@@ -55,3 +55,15 @@
 .nav-item #menu-title {
   flex: 70%;
 }
+
+img {
+  vertical-align: middle;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.title {
+  margin-left: 5px;
+  font-weight: lighter;
+  vertical-align: middle;
+}
