@@ -2,12 +2,13 @@ import React from 'react';
 import './LoginButton.css';
 import Button from "react-bootstrap/Button";
 
-const authEndpoint = 'https://accounts.spotify.com/authorize';
-const clientId = '45cf3144756d48118774fa691e19f136';
-const redirectURI = 'http://localhost:3000/';
+const authEndpoint = "https://accounts.spotify.com/authorize";
+const clientId = "45cf3144756d48118774fa691e19f136";
+const redirectURI = "http://localhost:3000/";
 const scopes = [
-    'user-top-read',
-    'user-read-recently-played',
+    "user-top-read",
+    "user-read-recently-played",
+    "playlist-read-private"
 ];
 const loginURL = `${authEndpoint}?response_type=token&client_id=${clientId}&scope=${scopes.join("%20")}&redirect_uri=${redirectURI}&show_dialog=true`;
 

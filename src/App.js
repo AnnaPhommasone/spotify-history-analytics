@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './pages/Login';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import Features from './pages/Features';
-import Genres from './pages/Genres';
-import Recommendations from './pages/Recommendations';
-import Login from './pages/Login';
+import RecentlyPlayed from './pages/RecentlyPlayed';
+import Playlists from './pages/Playlists';
+import TopSongsArtists from './pages/TopSongsArtists';
 
 function getHashParams(hash) {
   const strAfterHash = hash.substring(1);
@@ -36,9 +36,9 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/features" element={<Features token={token} />}></Route>
-            <Route path="/genres" element={<Genres />}></Route>
-            <Route path="/recommendations" element={<Recommendations />}></Route>
+            <Route path="/recently-played" element={<RecentlyPlayed token={token} />}></Route>
+            <Route path="/playlists" element={<Playlists token={token} />}></Route>
+            <Route path="/top-songs-artists" element={<TopSongsArtists token={token} />}></Route>
           </Routes>
         </Router>
       )}

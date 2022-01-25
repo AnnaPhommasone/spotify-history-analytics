@@ -1,8 +1,7 @@
 import React from 'react';
-import { AiFillHome } from 'react-icons/ai';
-import { BsFillFileBarGraphFill } from 'react-icons/bs';
-import { BsFillFileMusicFill } from 'react-icons/bs';
-import { AiFillLike } from 'react-icons/ai';
+import { AiFillHome, AiFillClockCircle } from 'react-icons/ai';
+import { BsFillVinylFill, BsFillFileMusicFill } from 'react-icons/bs';
+import { ImArrowUp } from 'react-icons/im';
 
 export const NavbarData = [
     {
@@ -11,18 +10,23 @@ export const NavbarData = [
         icon: <AiFillHome />,
     },
     {
-        title: 'Features',
-        path: '/features',
-        icon: <BsFillFileBarGraphFill />,
+        title: 'Recently Played',
+        path: '/recently-played',
+        icon: <AiFillClockCircle />,
     },
     {
-        title: 'Genres',
-        path: '/genres',
-        icon: <BsFillFileMusicFill />,
+        title: 'Playlists',
+        path: '/playlists',
+        icon: <BsFillVinylFill />,
     },
     {
-        title: 'Recommendations',
-        path: '/recommendations',
-        icon: <AiFillLike />,
+        title: 'Top Songs/Artists',
+        path: '/top-songs-artists',
+        icon: <ImArrowUp />,
     },
+    // {
+    //     title: 'Genres',
+    //     path: '/genres',
+    //     icon: <BsFillFileMusicFill />,
+    // },
 ];
